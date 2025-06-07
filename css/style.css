@@ -30,6 +30,7 @@ body {
     max-width: 1460px;
     margin: 0 auto;
     padding: 0 10px;
+    background-color: #fff;
 }
 
 .container {
@@ -195,4 +196,111 @@ body {
 .rectangle.visible {
     top: 100%; /* Окончательная позиция под списком */
     z-index: 1; /* Поднимаем на передний план */
+}
+
+.company__content {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    text-align: center;
+    align-items: center;
+    color: #000;
+    padding: 56px 334px 120px 335px;
+    background-color: #F8F6F2;
+}
+.company__img {
+    margin-top: 72px;
+    height: 100%;
+}
+
+.use__paid {
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    font-family: 'RobotoBold', sans-serif;
+    color: #000;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 115px;
+}
+
+.creators {
+    display: flex;
+    justify-content: space-between;
+    gap: 122px;
+}
+
+.creators__text {
+    max-width: 400px;
+    padding-bottom: 57px;
+}
+
+.creators__title {
+    padding-top: 84px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+    color: #000;
+    margin-bottom: 17px;
+}
+
+.creators__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.creators__link {
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 119%;
+    color: #000;
+    padding-bottom: 23px;
+}
+
+blockquote {
+    margin-left: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    font-style: normal !important;
+}
+
+blockquote p {
+    border-top: 1px solid #000;
+    padding: 25px 0 20px 0;
+}
+
+cite {
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+}
+
+blockquote span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.creators__card {
+    max-width: 670px;
+}
+
+.paid-social__inner {
+    background-image: url(../images/paid-social.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
