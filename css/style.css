@@ -226,12 +226,14 @@ body {
     width: 1000px;
     margin: 0 auto;
     margin-bottom: 115px;
+    margin-top: 122px;
 }
 
 .creators {
     display: flex;
     justify-content: space-between;
     gap: 122px;
+    margin-bottom: 120px;
 }
 
 .creators__text {
@@ -263,9 +265,10 @@ body {
     line-height: 119%;
     color: #000;
     padding-bottom: 23px;
+    align-items: center;
 }
 
-blockquote {
+.creators__text blockquote {
     margin-left: 0;
     text-align: left;
     font-weight: 400;
@@ -275,12 +278,12 @@ blockquote {
     font-style: normal !important;
 }
 
-blockquote p {
+.creators__text blockquote p {
     border-top: 1px solid #000;
     padding: 25px 0 20px 0;
 }
 
-cite {
+.creators__text cite {
     font-style: normal !important;
     font-weight: 400;
     font-size: 16px;
@@ -288,7 +291,7 @@ cite {
     color: #000;
 }
 
-blockquote span {
+.creators__text blockquote span {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
@@ -298,9 +301,214 @@ blockquote span {
     max-width: 670px;
 }
 
-.paid-social__inner {
+.paid-social__wrapper {
     background-image: url(../images/paid-social.svg);
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 840px;
+    margin-bottom: 120px;
+}
+
+.paid__social-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 120px 120px 282px;
+    gap: 290px;
+}
+
+.section-paid-socialtext {
+    padding: 38px 0 35px 0;
+}
+.paid__new-new {
+    border-radius: 19px;
+    width: 56px;
+    height: 19px;
+    background-color: #ffd000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: .14em;
+    color: #000;
+    margin-bottom: 21px;
+}
+.section-paid-social__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 17px;
+}
+.section-paid-social__description {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 21px;
+}
+.section-paid-social__button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #000;
+    align-items: center;
+}
+.section-paid-socialtext blockquote {
+    margin-left: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    font-style: normal !important;
+}
+
+.section-paid-socialtext blockquote p {
+    border-top: 1px solid #000;
+    padding: 29px 0 12px 0;
+}
+
+.section-paid-socialtext cite {
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+}
+
+.results {
+    position: relative; /* Необходимо для позиционирования внутренних элементов */
+    padding-bottom: 66px; /* Оставляем пространство под SVG (примерно половина её высоты) */
+}
+
+.lower-svg {
+    position: absolute;
+    bottom: -70px; /* Заходим на половину высоты SVG (на ~66 пикселей вверх) */
+    left: 47%;
+    transform: translateX(-50%); /* Горизонтальное центрирование */
+    margin-bottom: 75px;
+}
+.result__inner {
+    background-color: #fff;
+    font-weight: 400;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    gap: 122px;
+    position: relative;
+}
+
+.results__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-top: 164px;
+    margin-bottom: 17px;
+    font-family: 'RobotoBold', sans-serif;
+}
+.results__subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.results__link {
+    align-items: center;
+    font-weight: 700;
+    font-family:'RobotoBold', sans-serif;
+    font-size: 16px;
+    line-height: 1.19;
+}
+.result__inner > svg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.feedback__inner {
+    margin-top: 49px;
+    background-color: #F8F6F2;
+    font-weight: 400;
+    padding: 26px 79px 0 100px;
+}
+.feedback__text-ref {
+    font-size: 55px;
+    line-height: 1.36;
+    color: #000;
+    padding-bottom: 144px;
+}
+.feedback__text-ref span {
+    font-weight: 700;
+}
+.feedback__autor {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+}
+.feedback__autor span {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.58;
+    color: #000;
+    font-family: 'RobotoBold', sans-serif;
+}
+.feedback__autor-c {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 94px;
+    margin-bottom: 120px;
+}
+.feedback__autor {
+    padding: 8px 0;
+}
+.feedback__img {
+    width: 72px;
+    height: 72px;
+}
+
+
+.partners__inner {
+    background-color: #FFFFFE;
+    display: flex;
+    flex-direction: column;
+    font-style: bold;
+    align-items: center;
+}
+.partners__title {
+    font-weight: 700;
+    font-family:'RobotoBold', sans-serif;
+    font-size: 32px;
+    line-height: 1.1;
+    text-align: center;
+    color: #000;
+    margin-bottom: 47px;
+}
+.partners__img {
+    width: 564px;
+    height: 60px;
+    margin-bottom: 117px;
+}
+
+
+.leaders__inner {
+    background-color: #F8F6F2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 266px 120px 266px;
+}
+.leaders__title {
+    font-family: 'RobotoBold', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    text-align: center;
+    color: #000;
+    margin-bottom: 71px;
+}
+.leaders__img {
+    width: 908px;
+    height: 119px;
+    align-items: center;
 }
